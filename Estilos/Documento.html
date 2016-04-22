@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-Hojas de estilo en cascada documento</title>
+    <style>
+        /* Reglas  de tipo  etiqueta */
+        body
+        {
+            font-family: sans-serif;
+        }
+        p
+        {
+            line-height: 30px;
+        }
+        
+        /*Selectores de tipo id*/
+        /*importante:En HTML se recomienda usar solo un ID ala vez sin repetir.No abra una o mas etiquetas con el mismo id */
+        #subtitulo
+        {
+            color: darkorchid;
+        }
+        #maintitle
+        {
+            /*color: rgb(10,100,100);*/
+               color: #5f6f2b;
+        }
+        /*Reglas tipo clase*/
+        .articulo
+        {
+            font-family: cursive;
+            margin-bottom: 40px;
+        }
+        .articulo>header
+        {
+            font-weight: bold;
+            /*pt:point,px,pixeles,%:percent,em:?*/
+            font-size: 1.5em;
+            /*numero de beses que crece o decrece de  mi letra original*/
+        }
+        .contenido
+        {
+            line-height: 1em;
+            text-align: justify;
+        }
+        .articulo p
+        {
+            line-height: 1em;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="maintitle">CSS-Hojas de estilo en cascada documento</h1>
+    <p class="Contenido">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores vero perspiciatis incidunt repudiandae suscipit esse labore aperiam doloribus consequuntur, voluptate, tempora quis rerum quo corporis, aut iure enim perferendis, officiis.
+    </p>
+    <h2 id="subtitulo">Ejemplo de ID</h2>
+       <article class="articulo">
+    <section  id="articulos">
+       <header class="Titulo">Titulo de articulo</header>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sequi consectetur minima harum. Aperiam repudiandae accusamus, officia, ea error perferendis dicta minus explicabo, beatae labore sunt ducimus ratione culpa quaerat!
+        </p>
+            <button class="readmore">Leer mas</button>
+      
+    </article>
+    </section>
+           
+            <article class="articulo">
+    <section  id="articulos">
+       <header class="Titulo">Titulo de articulo</header>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sequi consectetur minima harum. Aperiam repudiandae accusamus, officia, ea error perferendis dicta minus explicabo, beatae labore sunt ducimus ratione culpa quaerat!
+        </p>
+            <button class="readmore">Leer mas</button>
+        </article>
+           </section>
+           
+            <article>
+    <section  id="articulos">
+       <header >Titulo de articulo</header>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sequi consectetur minima harum. Aperiam repudiandae accusamus, officia, ea error perferendis dicta minus explicabo, beatae labore sunt ducimus ratione culpa quaerat!
+        </p>
+            <button>Leer mas</button>
+        </article>
+           </section>
+</body>
+</html>
