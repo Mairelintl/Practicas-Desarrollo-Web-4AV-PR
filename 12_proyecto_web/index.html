@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   
+    <div class="container">
+<!--       para que el navegador o los motores de buscaqueda identifiquen las porciones de pagina-->
+        <header id="encabezado">
+<!-- crear una imagen de una ilustracion -->
+            <figure>
+            
+<!-- Rutas absolutas y relativas -->
+<!--/relativa/a/raiz/del/sitio-->
+<!--/relativa/a/raiz/del/actual-->
+<!--http://ww.dominio.com/ruta/absoluta/index.html-->
+<!-- file ://c:\users\mairelin\practicas\12_proyecto_web\images|logo_sep.png-->
+                 
+                <img  src="images/logo_sep.png" alt="Logotipo SEP">
+            </figure>
+            <div id="titulos">
+            <h1>Sitio Oficial del CETis No. 108 </h1>
+                <h2>Subsecretaría de Educación Media Superior</h2>
+            <h3>Dirección General de Educación Tecnológica Industrial</h3>
+            <h4>Centro de Estudios Tecnológicos industrial y de servicios No. 108
+               "Gral. Gabriel Leyva Solano" C.C.T. 25DCT0108H"</h4>
+                </div>
+                <div id="busqueda">
+            <figure>
+                <img src="images/sems_dgeti.png" alt="Logotipo SEMS DGETI">
+            </figure>
+            <input type ="text" name="busqueda" id="busqueda">
+                    <button> Buscar</button>
+            </div>
+        </header>
+        
+        <nav id="menu">
+      <!--      <ul> unordered list    -->
+            <ul>
+       <!-- list-item -->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Plantel</a></li>
+                <li>
+                <a href="#">Oferta educativa</a>
+                    <ul>
+                        <li><a href="#">Programacion</a></li>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Contabilidad</a></li>
+                        <li><a href="#">Mecanica</a></li>
+                        <li><a href="#">Electronica</a></li>
+                            
+                    </ul>
+                </li>    
+                 <li>
+                 <a href="#">Alumnos</a>
+                 <ul>
+                  <li><a href="#">Horario</a></li>    
+                 <li><a href="#">Calificaciones</a></li>    
+                 <li><a href="#">Convocatoria</a></li>
+                 </ul>
+        
+                </li>  
+                <li><a href="#">Docentes</a></li>   
+                <li><a href="#">Epleados</a></li>
+                  <li><a href="#">Contactos</a></li>   
+                   
+            </ul>
+        </nav>
+<!--        para que el navegador o los motores de buscaqueda identifiquen las porciones de pagina -->
+        <main id="contenido">
+        <section id="nota-importante">
+        <img src="images/Nota%20importante.jpg" alt="nota importante">
+        </section>
+        <section id="notas-secundarias">
+        notas secundarias
+        </section>
+        <aside id="publicidad">
+        publicidad
+        </aside>
+        </main>
+        <footer id="pie">
+            pie de pagina
+        </footer>
+    </div>
+</body>
+</html>
