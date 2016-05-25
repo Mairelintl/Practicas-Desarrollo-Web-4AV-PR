@@ -64,10 +64,16 @@ h1,h2,h3,h4,h5,h6,figure,p{
     width: 700px;
     display: inline-block;
     float: left;
-    /*background-color: #edf446;*/
+   /* background-color: #edf446;*/
 }
 #notas-secundarias article{
     display:flex;
+    background-image: url('../images/separador-nota-secundaria.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    
 }
 
 .imagen-nota-secundaria{
@@ -94,7 +100,7 @@ h1,h2,h3,h4,h5,h6,figure,p{
 }
 .intro-nota-secundaria{
     text-align: justify;
-    font-size:  1.1em;
+    /*font-size:  1.1em;*/
     margin: 10px 0;
 }
 .boton{
