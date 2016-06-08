@@ -63,8 +63,6 @@ h1,h2,h3,h4,h5,h6,figure,p{
     min-height: 300px;
     width: 700px;
     display: inline-block;
-    float: left;
-   /* background-color: #edf446;*/
 }
 #notas-secundarias article{
     display:flex;
@@ -126,13 +124,105 @@ h1,h2,h3,h4,h5,h6,figure,p{
     height:300px;
     width: 220px;
     display: inline-block;
-    float: right;
-    background-color: #dd3dd0;
+    /*utilizamos la propiedad CSS float para acomodar publicidad y compartir linea */
+    /*float: right;*/
+    /*background-color: #dd3dd0;*/
+       
 }
+#publicidad img {
+    margin: 5px 0px;
+}
+
+.flexible{
+    display: flex;
+}
+#programas{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#redes-sociales{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.facebook, .twitter{
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    text-indent: -9999px;
+    /*transition: 0.1s;*/
+}
+.facebook{
+    background: url('../images/facebook_twitter.png')0 0;
+    
+}
+.twitter{
+    background: url('../images/facebook_twitter.png') -43px 0;    
+}
+.facebook:hover{
+    background:  url('../images/facebook_twitter.png') 0 -43px;
+    
+}
+.twitter:hover{
+    background:  url('../images/facebook_twitter.png') -43px -43px;
+    }
+
+
+/*fin publicidad*/
 #pie{
-    height: 150px;
+    min-height:  height: 150px;
     clear: both;
-    background-color:#3df8ff ;
+    margin-top: 30px;
+    
+}
+#logo-sems{
+    background-image: url('../images/sems_footer.png');
+    height: 60px;
+    width: 215px;
+    display: block;
+    text-indent: -9999px;
+    margin: auto;
+    
+}
+#separador-sems
+{
+    margin: 30px 0px;
+    position: relative;
+}
+#logo-sems::before,#logo-sems::after{
+    content:"";
+    border-top: 3px double lightgray;
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 340px;
+    top: 30px;
+}
+#logo-sems::after{
+    right: 0;
+   
+}
+#logo-sems::before{
+    left: 0;
+   
+}
+#direccion p {
+    text-align: center;
+    color: darkgrey;
+    font-size: 0.8em;
+}
+#politicas{
+    text-align: center;
+    border-top: 3px  double lightgray;
+    border-bottom: 3px  double lightgray;
+    padding: 5px 0;
+    color: darkgray;
+
+}
+
+#politicas abbr{
+    cursor: help;
+    border-bottom: 1px dotted lightgray;
 }
 #menu li{
     list-style-type: none;
